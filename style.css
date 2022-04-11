@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+/* Reset CSS */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    padding: 0;
+    border: none;
+}
+
+button {
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+body {
+    background-color: #EAE8FE;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wrapper {
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-top: 43px;
+    margin-bottom: 171px;
+}
+
+
+.machine {
+    background-color: #fff;
+    width: 360px;
+    height: 545px;
+    display: inline-block;
+    margin-right: 28px;
+    overflow: hidden;
+}
+
+.machine ul.drink-list {
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    padding-top: 31px;
+}
+
+.machine ul.drink-list li {
+    width: 94px;
+    height: 130px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+p.drink-name {
+    font-size: 9px;
+}
+
+p.price {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: white;
+    line-height: 22px;
+    width: 70px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: #6327FE;
+}
+
+.machine ul.drink-list li::before {
+    display: block;
+    content: "";
+    width: 36px;
+    height: 65px;
+    background-color: black;
+    margin: 11px auto 6px auto;
+}
+
+.machine ul.drink-list li:nth-child(1)::before {
+    background: url(images/css_sprites.png) -122px -10px;
+}
+.machine ul.drink-list li:nth-child(2)::before {
+    background: url(images/css_sprites.png) -66px -10px;
+}
+.machine ul.drink-list li:nth-child(3)::before {
+    background: url(images/css_sprites.png) -10px -10px;
+}
+.machine ul.drink-list li:nth-child(4)::before {
+    background: url(images/css_sprites.png) -66px -95px;
+}
+.machine ul.drink-list li:nth-child(5)::before {
+    background: url(images/css_sprites.png) -178px -10px;
+}
+.machine ul.drink-list li:nth-child(6)::before {
+    background: url(images/css_sprites.png) -10px -95px;
+}
+
+.bottom {
+    width: 306px;
+    height: 193px;
+    /* border: 1px solid green; */
+    margin: 20px auto 28px auto;
+}
+
+.bottom .left {
+    width: 200px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.left .change {
+    height: 32px;
+    background-color: #EAE8FE;
+    margin-bottom: 11px;
+    border-radius: 5px;
+}
+
+.left .input {
+    width: 200px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+
+.left ul.basket {
+    height: 106px;
+    background-color: #EAE8FE;
+}
+
+.bottom .btn-list {
+    float: right;
+    /* margin-left: 12px; */
+    width: 94px;
+    /* border: 1px solid black; */
+}
+
+.btn-change {
+    height: 32px;
+    background: #FFFFFF;
+    border: 2px solid lightgray;
+    margin-bottom: 12px;
+}
+
+.btn-input {
+    height: 32px;
+    background: #FFFFFF;
+    border: 2px solid lightgray;
+    margin-bottom: 12px;
+}
+
+.btn-gain {
+    height: 106px;
+    color: white;
+    background: #6327FE;
+}
+
+
+.info {
+    width: 360px;
+    height: 545px;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.info .cash {
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding-top: 9px;
+}
+
+.cash h2 {
+    width: 306px;
+    height: 32px;
+    background-color: #EAE8FE;
+    margin: 0 auto;
+}
+
+.info .my-drink {
+    height: 474px;
+    background-color: #fff;
+}
